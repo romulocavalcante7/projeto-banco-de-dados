@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Movimentações de Estoque</h2>
+        <table id="stock-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Entrada</th>
+                    <th>Saída</th>
+                    <th>Fornecedor</th>
+                    <th>Ponto de Reposição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Movimentações de estoque serão exibidas aqui -->
+            </tbody>
+        </table>
+
+        <h2>Cadastrar Movimentação de Estoque</h2>
+        <form id="stock-form">
+            <label for="produto-id">ID do Produto:</label>
+            <input type="number" id="produto-id" required>
+            <label for="entrada">Entrada:</label>
+            <input type="number" id="entrada">
+            <label for="saida">Saída:</label>
+            <input type="number" id="saida">
+            <label for="fornecedor">Fornecedor:</label>
+            <input type="text" id="fornecedor">
+            <label for="ponto-reposicao">Ponto de Reposição:</label>
+            <input type="number" id="ponto-reposicao">
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
